@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+Show synchronous vs asynchronous execution. 
+Print a message after 2 seconds. 
+Print a counter every 1 second. 
+
+<h1>email verification </h1>
+
+<button id="verify">check email</button>
+<p id="result"></p>
+
+<script>
+     const email =document.getElementById("verify")
+        const result =document.getElementById("result")
+
+ email.onclick = function() {
+
+    result.innerHTML= "email verification is processing.."
+
+    setTimeout( function() {
+
+        result.innerHTML +="<br>verification is completed";
+    },2000);
+
+    result.innerHTML  +="<br>enter correct email..";
+    result.innerHTML +="<br>still proccesing.."
+
+ }
+ 
+
+</script>
+
+
+</body>
+</html> 
+
