@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+
+<p id="output"></p>
+
+<script>
+    let a=[1,2,3,4,5,6,12]
+
+   function show(text){
+   document.getElementById("output").innerHTML +=text + "<br>";
+}
+
+    const mapped=a.map((a)=>a*2)
+    show(`1 . map:${mapped} `)
+
+   
+    const filtered=a.filter((a)=>a%2==0)
+      show(`2 . filter:${filtered} `)
+
+
+    const reduced=a.reduce((prevVal,currentVal)=>{
+    console.log(prevVal,currentVal)
+    return prevVal+currentVal
+},0)
+      show(`3 . reduce:${reduced} `)
+   
+
+    const fined=a.find(a=>a>10)
+      show(`4 . find:${fined} `)
+  
+
+    const includess=a.includes(5)
+      show(`5 . include:${includess} `)
+  
+
+    
+    
+</script>
+</body>
+</html>

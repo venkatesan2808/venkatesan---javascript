@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<p id="output"></p>
+
+
+<script>
+    
+ 
+    let fruits=["apple","orange","banana"]
+
+   let text=""
+    
+     const result=document.getElementById("output")
+ 
+    fruits.push("mango")
+    text += "push:"+fruits+ "<br>";
+    
+    fruits.pop()
+      text += "pop:"+fruits+ "<br>";
+
+
+    fruits.unshift("mango")
+      text += "unshift:"+fruits+ "<br>";
+   
+   
+    fruits.shift()
+      text += "shift:"+fruits+ "<br>";
+   
+   
+     for(i=0;i<fruits.length;i++){
+        text+= fruits[i]
+    
+
+    result.innerHTML=text;
+    }
+
+
+
+    
+
+
+
+</script>
+
+</body>
+</html>
