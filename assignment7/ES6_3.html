@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ES6_3 
+Write concise arrow functions. 
+Create a simple class with constructor and method. 
+
+<script>
+//concise arrow fuction
+    const  add =(a,b)=>a+b;
+    console.log(add(2,3));
+
+    const sum = (c,b)=>c-b;
+    console.log(sum(10,4));
+
+    //terniary opertor
+    let a=20
+    const correct = (a>=18) ? "vote" : "not vote"
+    console.log(correct);
+    
+    
+    //class constructor and method
+    class student{
+        constructor(name,studyed){
+            this.name=name;
+            this.studyed=studyed;
+
+        }
+        enroll()
+        {
+            return `I am ${this.name} studying ${this.studyed}`;
+        }
+    }
+    const v2= new student("venkatesan.A","B.E cse")
+
+    console.log(v2.enroll());
+    
+</script>
+
+
+</body>
+</html>

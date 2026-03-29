@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Rewrite code with let and const. 
+Use template literals with variables. 
+Create a function with default parameter values. -->
+
+<pre id="result"></pre>
+<script>  
+
+  const method=document.getElementById("result")
+
+        let   age = 21;
+        const year="2005/08/28";
+
+    console.log(`my age :${age},my dob:${year}`)
+
+    function details(name="venkat"){
+        return `name,${name}`;
+        
+    }
+    //details("dinesh");
+   const result= details();
+
+   
+    method.textContent=
+    `name:${name}\n`+
+    `year:${year}\n`+
+    `my age :${age}my dob:${year}\n`+
+
+    `result: ${result}`
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create an object with name, age, and method sayHello(). 
+Access and modify object properties. 
+Call an object method. 
+  -->
+
+<script>
+    //properties
+    const person={
+        name:"venkat",
+        age: "21",
+        lang:'tamil',
+    //method
+     sayHello(){
+        return `hi I am ${this.name} my age is ${this.age} studying ${this.course}`
+        }
+    }
+    //change
+    person.age= 22;
+    //delete
+    delete person.lang;
+    //add new key and value
+    person.course="cse"
+//call object method
+ console.log(person.sayHello());
+
+ console.log(person);
+
+    
+
+    
+
+</script>
+</body>
+</html>

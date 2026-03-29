@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+<!--  
+ES6_2 
+Extract values from an array/object using destructuring. 
+Copy an array using spread operator. 
+Write a function using rest operator.  -->
+ 
+
+
+ <script>
+
+ //object destructuing
+    let details={
+        name:"venkat",
+        age:21,
+        country:"india"
+    };
+    const {name,age,country}= details
+    console.log( `name:${name},age:${age},country:${country}`)
+
+    let mydetails={
+
+         lang: "tamil",
+         study:"cse",
+};
+    const {lang,study}=mydetails
+    console.log(`lang:${lang},study:${study}`);
+
+ //sperad opertor
+    const combine={...details,...mydetails}
+      console.log ("combine",combine );
+
+    // rest operator
+
+    function num(a,...b) 
+    {
+        console.log(a);
+        console.log(b);
+        
+    }
+    num("venkat",2,3,4,5)
+
+    
+     
+    
+
+
+
+
+
+ </script>
+
+</body>
+</html>
